@@ -21,12 +21,7 @@ The RAG Legal PDF Processor is a Retrieval-Augmented Generation (RAG) system des
    ```sh
    git clone https://github.com/areebbashir/Legal-RAG.git
    ```
-2. Create a virtual environment:
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-3. Install dependencies:
+2. Install dependencies:
    ```sh
    pip install -r requirements.txt
    ```
@@ -36,9 +31,30 @@ The RAG Legal PDF Processor is a Retrieval-Augmented Generation (RAG) system des
 1. Place legal PDFs in the `data/` directory.
 2. Run the document processing script:
    ```sh
-   python process_documents.py
+      python main.py "sample.pdf"
    ```
-3. The extracted and embedded text will be stored in the vector database.
+3. The output should be like:
+   ```sh
+      Time taken for dataset__0__4.pdf: 2.68 seconds
+      ______________________________________________
+      
+      Extracted Data:
+      {
+          "dataset__0__4.pdf": {
+              "Effective Date": {
+                  "response": "01/03/2023"
+              },
+              "Expiration Date": {
+                  "response": "31/01/2024"
+              },
+              "Parties": {
+                  "response": "[\"BOARD OF COUNTY COMMISSIONERS\", \"CONSULTANT\"]"
+              }
+          }
+      }
+   Results saved to data_pred.json
+   ```
+4. For viewing the evaluation metrics check out RAG_Metrics.ipynb
 
 ### Querying the System
 Run the query interface to retrieve legal information:
