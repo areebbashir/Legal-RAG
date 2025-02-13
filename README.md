@@ -2,6 +2,11 @@
 
 ## Overview
 The RAG Legal PDF Processor is a Retrieval-Augmented Generation (RAG) system designed to extract, process, and generate responses based on legal PDFs. This system enables efficient retrieval of legal information and provides accurate, context-aware answers to user queries.
+The task at hand is to extract three specific fields from a set of legal contract PDFs:
+1.	**Effective Date**: The date when the contract becomes effective.
+2.	**Expiration Date**: The date when the contract expires.
+3.	**Parties**: The names of the legal entities involved in the contract.
+
 
 ## Features
 - **PDF Parsing**: Extracts text from legal PDFs using OCR and text-based extraction methods.
@@ -56,14 +61,9 @@ The RAG Legal PDF Processor is a Retrieval-Augmented Generation (RAG) system des
    ```
 4. For viewing the evaluation metrics check out RAG_Metrics.ipynb
 
-### Querying the System
-Run the query interface to retrieve legal information:
-```sh
-python query.py --question "What is the precedent for contract disputes?"
-```
 
 ## Dependencies
-- `pymupdf` (PDF parsing)
+- `fitz` (PDF parsing)
 - `openai` (LLM integration)
 - `faiss` (Vector database)
 - `transformers` (LLM models)
