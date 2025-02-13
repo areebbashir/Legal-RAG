@@ -8,8 +8,7 @@ The RAG Legal PDF Processor is a Retrieval-Augmented Generation (RAG) system des
 - **Document Chunking**: Splits large legal documents into manageable segments for better retrieval efficiency.
 - **Vector Search**: Embeds document chunks into a vector database for fast and relevant information retrieval.
 - **LLM-powered Responses**: Uses a large language model (LLM) to generate detailed and context-aware answers.
-- **Metadata Extraction**: Identifies and processes key legal metadata such as case numbers, statutes, and court rulings.
-- **Multi-document Querying**: Allows searching across multiple legal documents simultaneously.
+- **Metadata Extraction**: Identifies and processes key legal metadata such as name of the parties involved, Effective date and expiration date of the contract.
 
 ## Installation
 ### Prerequisites
