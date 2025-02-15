@@ -70,9 +70,9 @@ The task at hand is to extract three specific fields from a set of legal contrac
 - `torch` (Deep learning framework)
 
 ## Roadmap
-- [ ] Implement a great pdf parser which would extract unstructured pdfs
-- [ ] Use a fast vector database for fast retrieval
-- [ ] Create a evaluation metric like G-Eval
+- [.] Implement a great pdf parser which would extract unstructured pdfs
+- [.] Use a fast vector database for fast retrieval
+- [.] Create a evaluation metric like G-Eval
 
 
 ## Contact
